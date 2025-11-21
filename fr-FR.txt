@@ -106,10 +106,19 @@ items.loaded={0} articles chargés
 
 # ========== État du menu principal ==========
 status.checking_server=Vérification de l'état du serveur...
+status.logging_in=[Duck Market] Connexion en cours, veuillez patienter...
 status.server_online=[Duck Market] Serveur en ligne
 status.server_offline=[Duck Market] Serveur hors ligne
+status.click_to_login=[Duck Market] Cliquez ici pour vous connecter
+status.waiting_browser_login=[Duck Market] En attente de la connexion navigateur...
 status.steam_id_not_found=[Duck Market] Impossible d'obtenir l'ID Steam
 
 # ========== Options d'interaction ==========
 interaction.open_duck_market=Ouvrir Duck Market
+
+# ========== Boîte de dialogue de connexion web ==========
+weblogin.dialog_title=En attente de la connexion web
+weblogin.dialog_message=Si la page web ne s'ouvre pas automatiquement, veuillez cliquer sur le bouton copier le lien ci-dessous pour accéder et vous connecter
+weblogin.copy_link_button=Copier le lien
+weblogin.cancel_button=Annuler
 

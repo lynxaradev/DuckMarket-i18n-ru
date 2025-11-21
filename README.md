@@ -11,6 +11,8 @@ DuckMarket.Core/Localization/
 ├── en-US.txt    # English
 ├── ja-JP.txt    # Japanese
 ├── ko-KR.txt    # Korean
+├── fr-FR.txt    # French
+├── vi-VN.txt    # Vietnamese
 └── README.md    # Documentation
 ```
 
@@ -76,16 +78,17 @@ If you're not familiar with Git:
 
 ## 🌐 Supported Language Codes
 
-| Code | Language | Status |
-|------|----------|--------|
-| `zh-CN` | Simplified Chinese | ✅ Complete |
-| `zh-TW` | Traditional Chinese | 🚧 In Progress |
-| `en-US` | English | 🚧 In Progress |
-| `ja-JP` | Japanese | 🚧 In Progress |
-| `ko-KR` | Korean | 🚧 In Progress |
-| `ru-RU` | Russian | ❌ Pending |
-| `de-DE` | German | ❌ Pending |
-| `fr-FR` | French | ❌ Pending |
+| Code | Language | Status | Lines | Last Updated |
+|------|----------|--------|-------|--------------|
+| `zh-CN` | Simplified Chinese | ✅ Complete | 186 | 2025-11-21 |
+| `zh-TW` | Traditional Chinese | ✅ Complete | 186 | 2025-11-21 |
+| `en-US` | English | ✅ Complete | 181 | 2025-11-21 |
+| `ja-JP` | Japanese | ✅ Complete | 189 | 2025-11-21 |
+| `ko-KR` | Korean | ✅ Complete | 189 | 2025-11-21 |
+| `fr-FR` | French | ✅ Complete | 125 | 2025-11-21 |
+| `vi-VN` | Vietnamese | ✅ Complete | 120 | 2025-11-21 |
+| `ru-RU` | Russian | ❌ Pending | - | - |
+| `de-DE` | German | ❌ Pending | - | - |
 
 ## ✅ Translation Checklist
 
@@ -102,21 +105,48 @@ Before submitting, please ensure:
 
 ### Common Terms
 
-| Chinese | English | Japanese | Korean |
-|---------|---------|----------|--------|
-| 鸭鸭市场 | Duck Market | ダックマーケット | 덕 마켓 |
-| 上架 | List Item | 出品 | 등록 |
-| 下架 | Delist | 出品取消 | 등록 취소 |
-| 购买 | Purchase | 購入 | 구매 |
-| 卖家 | Seller | 出品者 | 판매자 |
-| 库存 | Stock | 在庫 | 재고 |
-| 自提柜 | Locker | ロッカー | 보관함 |
+| Chinese | English | Japanese | Korean | French | Vietnamese |
+|---------|---------|----------|--------|--------|-----------|
+| 鸭鸭市场 | Duck Market | ダックマーケット | 덕 마켓 | Duck Market | Duck Market |
+| 上架 | List Item | 出品 | 등록 | Mettre en vente | Đăng bán |
+| 下架 | Delist | 出品取消 | 등록 취소 | Retirer | Gỡ bỏ |
+| 购买 | Purchase | 購入 | 구매 | Acheter | Mua |
+| 卖家 | Seller | 出品者 | 판매자 | Vendeur | Người bán |
+| 库存 | Stock | 在庫 | 재고 | Stock | Kho |
+| 自提柜 | Locker | ロッカー | 보관함 | Casier | Tủ khóa |
+| 网页登录 | Web Login | ウェブログイン | 웹 로그인 | Connexion web | Đăng nhập web |
 
 ## 🤝 Contributors
 
 Thanks to all translation contributors!
 
-<!-- Contributor list will be auto-generated -->
+### 🌟 Translation Team
+
+| Language | Contributor | GitHub | Status |
+|----------|-------------|--------|--------|
+| 🇨🇳 Simplified Chinese | DuckMarket Team | [@DuckMarket-Dev](https://github.com/DuckMarket-Dev) | Maintainer |
+| 🇹🇼 Traditional Chinese | DuckMarket Team | [@DuckMarket-Dev](https://github.com/DuckMarket-Dev) | Maintainer |
+| 🇺🇸 English | DuckMarket Team | [@DuckMarket-Dev](https://github.com/DuckMarket-Dev) | Maintainer |
+| 🇯🇵 Japanese | DuckMarket Team | [@DuckMarket-Dev](https://github.com/DuckMarket-Dev) | Maintainer |
+| 🇰🇷 Korean | DuckMarket Team | [@DuckMarket-Dev](https://github.com/DuckMarket-Dev) | Maintainer |
+| 🇫🇷 French | Takeshi06 | [@Takeshi06](https://github.com/Takeshi06) | Contributor |
+| 🇻🇳 Vietnamese | Lehuyknight | [@Lehuyknight](https://github.com/Lehuyknight) | Contributor |
+
+### 🎯 Recent Updates (Nov 2025)
+
+- **2025-11-21**: ✨ Added **Web Login Dialog** translations for all 7 languages
+- **2025-11-21**: 🔧 Integrated as Git Submodule in main project
+- **2025-11-13**: 🇫🇷 French translation by [@Takeshi06](https://github.com/Takeshi06)
+- **2025-11-11**: 🇻🇳 Vietnamese translation by [@Lehuyknight](https://github.com/Lehuyknight)
+
+### 🏆 Want to Contribute?
+
+We welcome contributions for:
+- 🇷🇺 Russian (ru-RU)
+- 🇩🇪 German (de-DE)  
+- 🇪🇸 Spanish (es-ES)
+- 🇮🇹 Italian (it-IT)
+- And more languages!
 
 ## 📧 Contact
 

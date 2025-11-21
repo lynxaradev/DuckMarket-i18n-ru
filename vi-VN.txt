@@ -101,10 +101,19 @@ items.loaded=Đã tải {0} vật phẩm
 
 # ========== Main Menu Status ==========
 status.checking_server=Đang kiểm tra tình trạng máy chủ...
-status.server_online=[Duck Market] Server Online
-status.server_offline=[Duck Market] Server Offline
+status.logging_in=[Duck Market] Đang đăng nhập, vui lòng đợi...
+status.server_online=[Duck Market] Máy chủ trực tuyến
+status.server_offline=[Duck Market] Máy chủ ngoại tuyến
+status.click_to_login=[Duck Market] Nhấn vào đây để đăng nhập
+status.waiting_browser_login=[Duck Market] Đang chờ đăng nhập từ trình duyệt...
 status.steam_id_not_found=[Duck Market] Không lấy được SteamID
 
 # ========== Interaction Options ==========
 interaction.open_duck_market=Mở Duck Market
+
+# ========== Hộp thoại đăng nhập web ==========
+weblogin.dialog_title=Đang chờ đăng nhập web
+weblogin.dialog_message=Nếu trang web không tự động mở, vui lòng nhấn nút sao chép liên kết bên dưới để truy cập và đăng nhập
+weblogin.copy_link_button=Sao chép liên kết
+weblogin.cancel_button=Hủy
 
