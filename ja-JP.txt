@@ -185,4 +185,8 @@ weblogin.dialog_message=ウェブページが自動的に開かない場合は�
 weblogin.copy_link_button=リンクをコピー
 weblogin.cancel_button=キャンセル
 
-
+# ========== コミュニティリンク ==========
+community.qq_text=Join QQ group
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=Join Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR

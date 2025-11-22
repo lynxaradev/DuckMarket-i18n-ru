@@ -172,9 +172,14 @@ status.steam_id_not_found=[Duck Market] Unable to get Steam ID
 # ========== Interaction Options ==========
 interaction.open_duck_market=Open Duck Market
 
-# ========== Web Login Dialog ==========
-weblogin.dialog_title=Waiting for Web Login
-weblogin.dialog_message=If the webpage doesn't open automatically, please click the copy link button below to visit and login
+# ========== Web login dialog ==========
+weblogin.dialog_title=Waiting for web login
+weblogin.dialog_message=If the web page doesn't open automatically, please click the copy link button below to access and login
 weblogin.copy_link_button=Copy Link
 weblogin.cancel_button=Cancel
 
+# ========== Community links ==========
+community.qq_text=Join QQ group
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=Join Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR

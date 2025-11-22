@@ -166,20 +166,25 @@ pagination.text=第 {0} 頁，共 {1} 項
 items.loaded=已載入物品 {0} 個
 
 # ========== 主選單狀態 ==========
-status.checking_server=正在檢查伺服器狀態...\n交流群：1042457462
-status.logging_in=[鴨鴨市場] 正在登入，請稍候...\n交流群：1042457462
-status.server_online=[鴨鴨市場] 伺服器在線\n交流群：1042457462
-status.server_offline=[鴨鴨市場] 伺服器離線\n交流群：1042457462
-status.click_to_login=[鴨鴨市場] 請點擊此處登入\n交流群：1042457462
-status.waiting_browser_login=[鴨鴨市場] 等待瀏覽器登入...\n交流群：1042457462
-status.steam_id_not_found=[鴨鴨市場] 無法獲取 Steam ID\n交流群：1042457462
+status.checking_server=正在檢查伺服器狀態...
+status.logging_in=[鴨鴨市場] 正在登入，請稍候...
+status.server_online=[鴨鴨市場] 伺服器在線
+status.server_offline=[鴨鴨市場] 伺服器離線
+status.click_to_login=[鴨鴨市場] 請點擊此處登入
+status.waiting_browser_login=[鴨鴨市場] 等待瀏覽器登入...
+status.steam_id_not_found=[鴨鴨市場] 無法獲取 Steam ID
 
 # ========== 交互選項 ==========
 interaction.open_duck_market=打開鴨鴨市場
 
 # ========== 網頁登入對話框 ==========
 weblogin.dialog_title=正在等待網頁登入
-weblogin.dialog_message=如果網頁沒有自動開啟請點擊下方複製連結按鈕自行訪問登入
+weblogin.dialog_message=如果網頁沒有自動打開請點擊下方複製連結按鈕自行存取登入
 weblogin.copy_link_button=複製連結
 weblogin.cancel_button=取消
 
+# ========== 社群連結 ==========
+community.qq_text=加入 QQ群
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=加入 Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR

@@ -183,3 +183,9 @@ weblogin.dialog_message=Si la page web ne s'ouvre pas automatiquement, veuillez 
 weblogin.copy_link_button=Copier le lien
 weblogin.cancel_button=Annuler
 
+# ========== Liens communautaires ==========
+community.qq_text=Join QQ group
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=Join Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR
+

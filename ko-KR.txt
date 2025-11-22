@@ -185,4 +185,8 @@ weblogin.dialog_message=웹페이지가 자동으로 열리지 않으면 아래 
 weblogin.copy_link_button=링크 복사
 weblogin.cancel_button=취소
 
-
+# ========== 커뮤니티 링크 ==========
+community.qq_text=Join QQ group
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=Join Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR

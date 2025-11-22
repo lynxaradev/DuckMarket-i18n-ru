@@ -182,3 +182,9 @@ weblogin.dialog_message=Nếu trang web không tự động mở, vui lòng nh�
 weblogin.copy_link_button=Sao chép liên kết
 weblogin.cancel_button=Hủy
 
+# ========== Liên kết cộng đồng ==========
+community.qq_text=Join QQ group
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=Join Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR
+

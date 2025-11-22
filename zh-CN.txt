@@ -166,13 +166,13 @@ pagination.text=第 {0} 页，共 {1} 项
 items.loaded=已加载物品 {0} 个
 
 # ========== 主菜单状态 ==========
-status.checking_server=正在检查服务器状态...\n交流群：1042457462
-status.logging_in=[鸭鸭市场] 正在登录，请稍候...\n交流群：1042457462
-status.server_online=[鸭鸭市场] 服务器在线\n交流群：1042457462
-status.server_offline=[鸭鸭市场] 服务器离线\n交流群：1042457462
-status.click_to_login=[鸭鸭市场] 请点击此处登录\n交流群：1042457462
-status.waiting_browser_login=[鸭鸭市场] 等待浏览器登录...\n交流群：1042457462
-status.steam_id_not_found=[鸭鸭市场] 无法获取 Steam ID\n交流群：1042457462
+status.checking_server=正在检查服务器状态...
+status.logging_in=[鸭鸭市场] 正在登录，请稍候...
+status.server_online=[鸭鸭市场] 服务器在线
+status.server_offline=[鸭鸭市场] 服务器离线
+status.click_to_login=[鸭鸭市场] 请点击此处登录
+status.waiting_browser_login=[鸭鸭市场] 等待浏览器登录...
+status.steam_id_not_found=[鸭鸭市场] 无法获取 Steam ID
 
 # ========== 交互选项 ==========
 interaction.open_duck_market=鸭鸭市场
@@ -182,4 +182,10 @@ weblogin.dialog_title=正在等待网页登录
 weblogin.dialog_message=如果网页没有自动打开请点击下方复制链接按钮自行访问登录
 weblogin.copy_link_button=复制链接
 weblogin.cancel_button=取消
+
+# ========== 社群链接 ==========
+community.qq_text=加入 QQ群
+community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
+community.discord_text=加入 Discord
+community.discord_url=https://discord.gg/JyeP9f7zcR
 
