@@ -4,9 +4,13 @@
 # ========== Interface principale ==========
 market.title=Duck Market
 market.browse=Parcourir le marché
-market.my_listings=Mes articles
+market.my_listings=Mes annonces
 market.per_item=Par article
 market.seller=Vendeur
+market.buyer=Acheteur
+market.demand=Demande
+market.fulfilled=Satisfait
+market.expired=Expiré
 market.mod_item=Article MOD
 
 # ========== Boutons de filtre ==========
@@ -20,6 +24,20 @@ search.refresh=Actualiser la liste
 search.placeholder=Rechercher des articles...
 search.item_name_placeholder=Rechercher un nom d'article...
 search.advanced_filter_placeholder=Filtre avancé...
+
+# ========== Boutons de fourniture ==========
+supply.button=Fournir
+supply.no_stock=Rupture de stock
+supply.cancel=Annuler
+market.supply_button=Fournir
+market.no_stock_button=Rupture de stock
+market.cancel_order_button=Annuler
+market.no_purchase_orders=Aucune commande d'achat disponible
+market.purchase_order_not_found=Aucune commande d'achat pour l'article {0} sur le marché
+market.no_listings=Aucune annonce disponible
+market.item_not_found=Aucune annonce trouvée pour l'article {0} sur le marché
+market.no_my_purchase_orders=Aucune commande d'achat
+market.no_my_sell_listings=Aucune annonce de vente
 
 # ========== Boutons d'achat ==========
 buy.button=Acheter
@@ -119,8 +137,8 @@ market.show_owned_only=Possédés uniquement
 # ========== Notifications de vente ==========
 sold.base_notification=Article vendu ! {0} x{1} = {2} pièces (Acheteur : {3})
 sold.raid_notification=Article vendu ! {0} x{1} = {2} pièces (Vous les recevrez au retour à la base)
-sold.single_notification=Article vendu : {0} x{1} = {2} ₽
-sold.multiple_notification={0} articles vendus, total de {1} ₽
+sold.single_notification=Article vendu : {0} x{1} = {2} 
+sold.multiple_notification={0} articles vendus, total de {1} 
 
 # ========== Connexion WebSocket ==========
 websocket.disconnected=Connexion au marché perdue

@@ -4,9 +4,13 @@
 # ========== 主界面 ==========
 market.title=鸭鸭市场
 market.browse=浏览市场
-market.my_listings=我的商品
+market.my_listings=我的挂单
 market.per_item=每件物品
 market.seller=卖家
+market.buyer=买家
+market.demand=需求
+market.fulfilled=已满足
+market.expired=已过期
 market.mod_item=MOD 商品
 
 # ========== 筛选按钮 ==========
@@ -20,6 +24,20 @@ search.refresh=刷新列表
 search.placeholder=搜索商品...
 search.item_name_placeholder=搜索商品名称...
 search.advanced_filter_placeholder=高级筛选...
+
+# ========== 供货按钮 ==========
+supply.button=供货
+supply.no_stock=无货
+supply.cancel=取消
+market.supply_button=供货
+market.no_stock_button=无货
+market.cancel_order_button=取消
+market.no_purchase_orders=暂无求购订单
+market.purchase_order_not_found=物品 {0} 市场上暂无求购订单
+market.no_listings=市场暂无商品
+market.item_not_found=物品 {0} 市场上没有找到哦
+market.no_my_purchase_orders=暂无求购挂单
+market.no_my_sell_listings=暂无出售挂单
 
 # ========== 购买按钮 ==========
 buy.button=购买
@@ -119,8 +137,8 @@ market.show_owned_only=仅拥有
 # ========== 售出通知 ==========
 sold.base_notification=商品已售出！{0} x{1} = {2} 金币 (买家: {3})
 sold.raid_notification=商品已售出！{0} x{1} = {2} 金币 (返回基地后获得)
-sold.single_notification=商品已售出：{0} x{1} = {2} ₽
-sold.multiple_notification={0} 件商品已售出，共获得 {1} ₽
+sold.single_notification=商品已售出：{0} x{1} = {2} 
+sold.multiple_notification={0} 件商品已售出，共获得 {1} 
 
 # ========== WebSocket 连接 ==========
 websocket.disconnected=市场连接已断开
@@ -192,4 +210,109 @@ community.qq_text=加入 QQ群
 community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
 community.discord_text=加入 Discord
 community.discord_url=https://discord.gg/JyeP9f7zcR
+
+# ========== 供货相关 ==========
+supply.title=你想要供货多少？
+supply.confirm=确认供货
+supply.payment=你将获得 {0}
+supply.success_notification=供货成功！{0} x{1}，获得 {2}
+supply.failed_notification=供货失败，请重试
+supply.cannot_fulfill=此订单当前无法供货
+supply.insufficient_balance_for_tax=余额不足！需要支付税费{0}，当前余额{1}
+supply.insufficient_items=物品不足！你只有{0}个{1}
+supply.exceed_demand=供货数量不能超过需求数量({0}个)
+
+# ========== 求购订单 ==========
+purchase_order.no_entry=物品 {0} 暂无求购订单
+purchase_order.cancelled_success=求购订单已取消，已退还 {0} 金币到自提点
+purchase_order.cancelled_failed=取消求购订单失败: {0}
+purchase_order.cancelled_failed_generic=取消求购订单失败
+purchase.insufficient_balance=余额不足！需要 {0}，但只有 {1}
+
+# ========== 供货界面标签 ==========
+supply.no_full_durability=你没有满耐久的 {0}，无法供货
+supply.quantity_label=供货数量
+supply.demand_label=需求:
+supply.you_have_full_durability=你拥有满耐久: {0}个
+supply.demand_and_buyer=需求: {0}个 | 买家: {1}
+supply.tax_label=(税费: {0})
+supply.insufficient_tax_label=(税费不足: {0})
+
+# ========== 求购订单创建 ==========
+purchase_order.create_button=发布求购订单
+purchase_order.price_with_tax={0} (税费：{1})
+purchase_order.insufficient_funds=资金不足，需要 {0}（包含税费）
+purchase_order.tax_calculation_error=税费计算错误
+
+# ========== 通用 ==========
+common.no_data=暂无数据
+common.quantity_format={0}个
+
+# ========== WebSocket通知 ==========
+notification.completed=已完成
+notification.remaining_quantity=还需{0}个
+notification.purchase_order_fulfilled={0} x{1} 由 {2} 供货，{3}
+notification.item_expired=商品已过期：{0} x{1} 已返回自提柜
+
+# ========== 求购订单输入 ==========
+purchase_order.quantity_input_label=求购数量
+purchase_order.price_input_label=求购单价
+purchase_order.quantity_must_be_positive=求购数量必须大于0
+purchase_order.quantity_exceeds_max=求购数量不能超过 {0}
+purchase_order.price_cannot_be_negative=求购单价不能为负数
+purchase_order.price_below_minimum=求购单价不能低于推荐价格的一半 ({0})
+
+# ========== 求购订单发布 ==========
+purchase_order.publish_success=求购订单发布成功: {0} x{1}，冻结资金 {2}
+purchase_order.publish_failed=求购订单发布失败: {0}
+purchase_order.publish_failed_generic=求购订单发布失败
+
+# ========== 上架失败 ==========
+listing.insufficient_tax_balance=余额不足！需要 {0} 金币支付税费，当前余额 {1} 金币
+listing.insufficient_storage=仓库数量不足！需要 {0}，仓库只有 {1}
+
+# ========== 求购按钮 ==========
+menu.purchase_order=求购
+
+# ========== 验证错误消息 ==========
+validation.listing_data_null=上架数据不能为空
+validation.item_null=物品不能为空
+validation.invalid_item_type_id=物品类型 ID 无效
+validation.item_name_empty=物品名称不能为空
+validation.quantity_must_be_positive=数量必须大于 0
+validation.quantity_exceeds_absolute_max=数量不能超过 {0}（系统限制）
+validation.quantity_exceeds_storage=数量不能超过 {0}（仓库数量）
+validation.quantity_out_of_range=数量必须在 1 到 {0} 之间
+validation.price_must_be_positive=价格必须大于 0
+validation.price_exceeds_max=价格不能超过 10,000,000
+validation.price_exceeds_one_million=价格不能超过 1,000,000
+validation.total_price_exceeds_max=总价不能超过 100,000,000
+validation.market_not_selected=必须选择市场
+validation.durability_out_of_range=耐久度必须在 0 到 100 之间
+validation.invalid_condition=物品状态无效
+
+# ========== API错误消息 ==========
+error.unknown=未知错误
+error.order_limit_exceeded=订单数量已达上限（最多{0}个），请先取消部分订单
+error.order_limit_exceeded_generic=订单数量已达上限，请先取消部分订单
+error.order_cancelled=该订单已被取消，无法供货
+error.order_completed=该订单已完成，无法重复供货
+error.order_expired=该订单已过期，无法供货
+error.order_invalid_state=订单状态异常，无法供货（可能已取消或完成）
+error.duplicate_purchase_order=检测到相同的求购订单，请稍等几秒后再试
+error.duplicate_order=检测到重复订单，请稍等几秒后重试
+error.insufficient_balance_purchase_order=余额不足，无法创建求购订单
+error.invalid_price=价格无效，请检查价格设置
+error.invalid_quantity=数量无效，请检查数量设置
+error.not_authenticated=未登录或登录已过期，请重新登录
+error.item_not_found=物品不存在或已被移除
+error.order_not_found=订单不存在或已被删除
+error.operation_failed=操作失败，请重试
+
+# ========== 时间显示 ==========
+time.expired=已过期
+time.seconds={0}秒
+time.minutes={0}分钟
+time.hours={0}小时
+time.hours_minutes={0}小时{1}分
 

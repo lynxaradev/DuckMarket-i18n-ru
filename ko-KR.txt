@@ -6,11 +6,15 @@ market.title=Duck Market
 DuckMarket.Title=Duck Market
 DuckMarket.Title.ko-KR=Duck Market
 market.browse=마켓 둘러보기
-market.my_listings=내 상품
+market.my_listings=내 리스트
 market.per_item=개당
 DuckMarket.PerItem.ko-KR=개당
 market.seller=판매자
 DuckMarket.Seller.ko-KR=판매자
+market.buyer=구매자
+market.demand=수요
+market.fulfilled=완료됨
+market.expired=만료됨
 market.mod_item=MOD 아이템
 
 # ========== 필터 버튼 ==========
@@ -24,6 +28,17 @@ search.refresh=새로고침
 search.placeholder=아이템 검색...
 search.item_name_placeholder=아이템 이름 검색...
 search.advanced_filter_placeholder=고급 필터...
+
+# ========== 공급 버튼 ==========
+market.supply_button=공급
+market.no_stock_button=재고 없음
+market.cancel_order_button=취소
+market.no_purchase_orders=구매 주문이 없습니다
+market.purchase_order_not_found=아이템 {0}의 구매 주문이 시장에 없습니다
+market.no_listings=매물이 없습니다
+market.item_not_found=아이템 {0}의 매물을 시장에서 찾을 수 없습니다
+market.no_my_purchase_orders=구매 주문이 없습니다
+market.no_my_sell_listings=판매 리스트가 없습니다
 
 # ========== 구매 버튼 ==========
 buy.button=구매
@@ -123,8 +138,8 @@ options.font.large=크게
 # ========== 판매 알림 ==========
 sold.base_notification=상품이 판매되었습니다! {0} x{1} = {2} 코인 (구매자: {3})
 sold.raid_notification=상품이 판매되었습니다! {0} x{1} = {2} 코인 (기지로 돌아가면 받을 수 있습니다)
-sold.single_notification=상품이 판매되었습니다: {0} x{1} = {2} ₽
-sold.multiple_notification={0}개 상품이 판매되었습니다, 총 {1} ₽
+sold.single_notification=상품이 판매되었습니다: {0} x{1} = {2} 
+sold.multiple_notification={0}개 상품이 판매되었습니다, 총 {1} 
 
 # ========== WebSocket 연결 ==========
 websocket.disconnected=마켓 연결이 끊어졌습니다
@@ -194,3 +209,108 @@ community.qq_text=Join QQ group
 community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
 community.discord_text=Join Discord
 community.discord_url=https://discord.gg/JyeP9f7zcR
+
+# ========== 공급 관련 ==========
+supply.title=얼마나 공급하시겠습니까?
+supply.confirm=공급 확인
+supply.payment={0}를 받게 됩니다
+supply.success_notification=공급 성공! {0} x{1}, {2}를 받았습니다
+supply.failed_notification=공급 실패, 다시 시도하세요
+supply.cannot_fulfill=이 주문은 현재 이행할 수 없습니다
+supply.insufficient_balance_for_tax=잔액 부족! 세금이 필요합니다: {0}, 현재 잔액: {1}
+supply.insufficient_items=아이템 부족! {0}개의 {1}만 있습니다
+supply.exceed_demand=공급 수량이 수요를 초과했습니다({0}개)
+
+# ========== 구매 주문 ==========
+purchase_order.no_entry={0}에 대한 구매 주문이 없습니다
+purchase_order.cancelled_success=구매 주문이 취소되었습니다, {0} 코인이 수령 지점에 환불되었습니다
+purchase_order.cancelled_failed=구매 주문 취소 실패: {0}
+purchase_order.cancelled_failed_generic=구매 주문 취소 실패
+purchase.insufficient_balance=잔액 부족! 필요: {0}, 보유: {1}
+
+# ========== 공급 인터페이스 레이블 ==========
+supply.no_full_durability=최대 내구도의 {0}가 없습니다, 공급할 수 없습니다
+supply.quantity_label=공급 수량
+supply.demand_label=수요:
+supply.you_have_full_durability=최대 내구도 보유: {0}개
+supply.demand_and_buyer=수요: {0}개 | 구매자: {1}
+supply.tax_label=(세금: {0})
+supply.insufficient_tax_label=(세금 부족: {0})
+
+# ========== 구매 주문 생성 ==========
+purchase_order.create_button=구매 주문 발행
+purchase_order.price_with_tax={0} (세금: {1})
+purchase_order.insufficient_funds=자금 부족, {0}가 필요합니다(세금 포함)
+purchase_order.tax_calculation_error=세금 계산 오류
+
+# ========== 공통 ==========
+common.no_data=데이터 없음
+common.quantity_format={0}개
+
+# ========== WebSocket 알림 ==========
+notification.completed=완료
+notification.remaining_quantity={0}개 더 필요
+notification.purchase_order_fulfilled={0} x{1}이(uac00) {2}에 의해 공급됨, {3}
+notification.item_expired=아이템 만료: {0} x{1}이(가) 수령 락커로 반환됨
+
+# ========== 구매 주문 입력 ==========
+purchase_order.quantity_input_label=구매 수량
+purchase_order.price_input_label=구매 단가
+purchase_order.quantity_must_be_positive=구매 수량은 0보다 커야 합니다
+purchase_order.quantity_exceeds_max=구매 수량은 {0}을(를) 초과할 수 없습니다
+purchase_order.price_cannot_be_negative=구매 단가는 음수가 될 수 없습니다
+purchase_order.price_below_minimum=구매 단가는 권장 가격의 절반 미만이 될 수 없습니다 ({0})
+
+# ========== 구매 주문 발행 ==========
+purchase_order.publish_success=구매 주문이 성공적으로 발행되었습니다: {0} x{1}, 동결 자금 {2}
+purchase_order.publish_failed=구매 주문 발행 실패: {0}
+purchase_order.publish_failed_generic=구매 주문 발행 실패
+
+# ========== 리스팅 실패 ==========
+listing.insufficient_tax_balance=잔액 부족! 세금 지불에 {0} 코인이 필요, 현재 잔액 {1} 코인
+listing.insufficient_storage=창고 부족! {0}이(가) 필요, 창고에는 {1}만 있음
+
+# ========== 구매 주문 버튼 ==========
+menu.purchase_order=구매 주문
+
+# ========== 검증 오류 메시지 ==========
+validation.listing_data_null=리스팅 데이터는 비어 있을 수 없습니다
+validation.item_null=아이템은 비어 있을 수 없습니다
+validation.invalid_item_type_id=잘못된 아이템 유형 ID
+validation.item_name_empty=아이템 이름은 비어 있을 수 없습니다
+validation.quantity_must_be_positive=수량은 0보다 커야 합니다
+validation.quantity_exceeds_absolute_max=수량은 {0}을(를) 초과할 수 없습니다(시스템 제한)
+validation.quantity_exceeds_storage=수량은 {0}을(를) 초과할 수 없습니다(창고 수량)
+validation.quantity_out_of_range=수량은 1과 {0} 사이여야 합니다
+validation.price_must_be_positive=가격은 0보다 커야 합니다
+validation.price_exceeds_max=가격은 10,000,000을 초과할 수 없습니다
+validation.price_exceeds_one_million=가격은 1,000,000을 초과할 수 없습니다
+validation.total_price_exceeds_max=총 가격은 100,000,000을 초과할 수 없습니다
+validation.market_not_selected=시장을 선택해야 합니다
+validation.durability_out_of_range=내구도는 0과 100 사이여야 합니다
+validation.invalid_condition=잘못된 아이템 상태
+
+# ========== API 오류 메시지 ==========
+error.unknown=알 수 없는 오류
+error.order_limit_exceeded=주문 한계에 도달했습니다(최대 {0}개), 먼저 일부 주문을 취소하세요
+error.order_limit_exceeded_generic=주문 한계에 도달했습니다, 먼저 일부 주문을 취소하세요
+error.order_cancelled=이 주문은 취소되었습니다, 공급할 수 없습니다
+error.order_completed=이 주문은 완료되었습니다, 다시 공급할 수 없습니다
+error.order_expired=이 주문은 만료되었습니다, 공급할 수 없습니다
+error.order_invalid_state=주문 상태가 비정상입니다, 공급할 수 없습니다(취소 또는 완료 가능성)
+error.duplicate_purchase_order=동일한 구매 주문이 감지되었습니다, 몇 초 기다렸다가 다시 시도하세요
+error.duplicate_order=중복 주문이 감지되었습니다, 몇 초 기다렸다가 다시 시도하세요
+error.insufficient_balance_purchase_order=잔액 부족, 구매 주문을 생성할 수 없습니다
+error.invalid_price=잘못된 가격, 가격 설정을 확인하세요
+error.invalid_quantity=잘못된 수량, 수량 설정을 확인하세요
+error.not_authenticated=로그인하지 않았거나 세션이 만료되었습니다, 다시 로그인하세요
+error.item_not_found=아이템을 찾을 수 없거나 삭제되었습니다
+error.order_not_found=주문을 찾을 수 없거나 삭제되었습니다
+error.operation_failed=작업이 실패했습니다, 다시 시도하세요
+
+# ========== 시간 표시 ==========
+time.expired=만료됨
+time.seconds={0}초
+time.minutes={0}분
+time.hours={0}시간
+time.hours_minutes={0}시간 {1}분

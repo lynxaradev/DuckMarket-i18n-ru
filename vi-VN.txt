@@ -4,9 +4,13 @@
 # ========== Giao diện chính ==========
 market.title=Duck Market
 market.browse=Cửa hàng
-market.my_listings=Danh sách của tôi
+market.my_listings=Đơn hàng của tôi
 market.per_item=Vật phẩm
 market.seller=Seller
+market.buyer=Buyer
+market.demand=Nhu cầu
+market.fulfilled=Hoàn thành
+market.expired=Hết hạn
 market.mod_item=Vật phẩm MOD
 
 # ========== Nút lọc ==========
@@ -20,6 +24,20 @@ search.refresh=Làm mới
 search.placeholder=Tìm vật phẩm...
 search.item_name_placeholder=Tìm theo tên vật phẩm...
 search.advanced_filter_placeholder=Lọc...
+
+# ========== Nút cung cấp ==========
+supply.button=Cung cấp
+supply.no_stock=Hết hàng
+supply.cancel=Hủy
+market.supply_button=Cung cấp
+market.no_stock_button=Hết hàng
+market.cancel_order_button=Hủy
+market.no_purchase_orders=Không có đơn đặt mua nào
+market.purchase_order_not_found=Vật phẩm {0} trên thị trường không có đơn đặt mua
+market.no_listings=Không có sản phẩm nào
+market.item_not_found=Vật phẩm {0} không tìm thấy trên thị trường
+market.no_my_purchase_orders=Không có đơn đặt mua
+market.no_my_sell_listings=Không có đơn bán
 
 # ========== Nút mua ==========
 buy.button=Mua
@@ -118,8 +136,8 @@ market.show_owned_only=Chỉ sở hữu
 # ========== Sold Notifications ==========
 sold.base_notification=Vật phẩm đã bán! {0} x{1} = {2} coins (Người mua: {3})
 sold.raid_notification=Vật phẩm đã bán! {0} x{1} = {2} coins (Bạn sẽ nhận được tiền khi trở về căn cứ)
-sold.single_notification=Vật phẩm đã bán: {0} x{1} = {2} ₽
-sold.multiple_notification={0} vật phẩm đã bán, tổng cộng {1} ₽
+sold.single_notification=Vật phẩm đã bán: {0} x{1} = {2} 
+sold.multiple_notification={0} vật phẩm đã bán, tổng cộng {1} 
 
 # ========== WebSocket Connection ==========
 websocket.disconnected=Mất kết nối với Market

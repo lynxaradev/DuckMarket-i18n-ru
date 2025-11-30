@@ -4,9 +4,13 @@
 # ========== 主界面 ==========
 market.title=鴨鴨市場
 market.browse=瀏覽市場
-market.my_listings=我的商品
+market.my_listings=我的掛單
 market.per_item=每件物品
 market.seller=賣家
+market.buyer=買家
+market.demand=需求
+market.fulfilled=已滿足
+market.expired=已過期
 market.mod_item=MOD 商品
 
 # ========== 篩選按鈕 ==========
@@ -20,6 +24,17 @@ search.refresh=重新整理
 search.placeholder=搜尋商品...
 search.item_name_placeholder=搜尋商品名稱...
 search.advanced_filter_placeholder=高級篩選...
+
+# ========== 供貨按鈕 ==========
+market.supply_button=供貨
+market.no_stock_button=無貨
+market.cancel_order_button=取消
+market.no_purchase_orders=曫無求購訂單
+market.purchase_order_not_found=物品 {0} 市場上暫無求購訂單
+market.no_listings=市場暫無商品
+market.item_not_found=物品 {0} 市場上沒有找到
+market.no_my_purchase_orders=暫無求購掛單
+market.no_my_sell_listings=暫無出售掛單
 
 # ========== 購買按鈕 ==========
 buy.button=購買
@@ -119,8 +134,8 @@ market.show_owned_only=僅擁有
 # ========== 售出通知 ==========
 sold.base_notification=商品已售出！{0} x{1} = {2} 金幣 (買家: {3})
 sold.raid_notification=商品已售出！{0} x{1} = {2} 金幣 (返回基地後獲得)
-sold.single_notification=商品已售出：{0} x{1} = {2} ₽
-sold.multiple_notification={0} 件商品已售出，共獲得 {1} ₽
+sold.single_notification=商品已售出：{0} x{1} = {2} 
+sold.multiple_notification={0} 件商品已售出，共獲得 {1} 
 
 # ========== WebSocket 連接 ==========
 websocket.disconnected=市場連接已中斷
@@ -192,3 +207,108 @@ community.qq_text=加入 QQ群
 community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
 community.discord_text=加入 Discord
 community.discord_url=https://discord.gg/JyeP9f7zcR
+
+# ========== 供貨相關 ==========
+supply.title=你想要供貨多少？
+supply.confirm=確認供貨
+supply.payment=你將獲得 {0}
+supply.success_notification=供貨成功！{0} x{1}，獲得 {2}
+supply.failed_notification=供貨失敗，請重試
+supply.cannot_fulfill=此訂單目前無法供貨
+supply.insufficient_balance_for_tax=餘額不足！需要支付稅費{0}，目前餘額{1}
+supply.insufficient_items=物品不足！你只有{0}個{1}
+supply.exceed_demand=供貨數量不能超過需求數量({0}個)
+
+# ========== 求購訂單 ==========
+purchase_order.no_entry=物品 {0} 暫無求購訂單
+purchase_order.cancelled_success=求購訂單已取消，已退還 {0} 金幣到自提點
+purchase_order.cancelled_failed=取消求購訂單失敗: {0}
+purchase_order.cancelled_failed_generic=取消求購訂單失敗
+purchase.insufficient_balance=餘額不足！需要 {0}，但只有 {1}
+
+# ========== 供貨界面標籤 ==========
+supply.no_full_durability=你沒有滿耐久的 {0}，無法供貨
+supply.quantity_label=供貨數量
+supply.demand_label=需求:
+supply.you_have_full_durability=你擁有滿耐久: {0}個
+supply.demand_and_buyer=需求: {0}個 | 買家: {1}
+supply.tax_label=(稅費: {0})
+supply.insufficient_tax_label=(稅費不足: {0})
+
+# ========== 求購訂單創建 ==========
+purchase_order.create_button=發布求購訂單
+purchase_order.price_with_tax={0} (稅費：{1})
+purchase_order.insufficient_funds=資金不足，需要 {0}（包含稅費）
+purchase_order.tax_calculation_error=稅費計算錯誤
+
+# ========== 通用 ==========
+common.no_data=暫無數據
+common.quantity_format={0}個
+
+# ========== WebSocket通知 ==========
+notification.completed=已完成
+notification.remaining_quantity=還需{0}個
+notification.purchase_order_fulfilled={0} x{1} 由 {2} 供貨，{3}
+notification.item_expired=商品已過期：{0} x{1} 已返回自提柃
+
+# ========== 求購訂單輸入 ==========
+purchase_order.quantity_input_label=求購數量
+purchase_order.price_input_label=求購單價
+purchase_order.quantity_must_be_positive=求購數量必須大於0
+purchase_order.quantity_exceeds_max=求購數量不能超過 {0}
+purchase_order.price_cannot_be_negative=求購單價不能為負數
+purchase_order.price_below_minimum=求購單價不能低於推薦價格的一半 ({0})
+
+# ========== 求購訂單發布 ==========
+purchase_order.publish_success=求購訂單發布成功: {0} x{1}，凍結資金 {2}
+purchase_order.publish_failed=求購訂單發布失敗: {0}
+purchase_order.publish_failed_generic=求購訂單發布失敗
+
+# ========== 上架失敗 ==========
+listing.insufficient_tax_balance=餘額不足！需要 {0} 金幣支付稅費，目前餘額 {1} 金幣
+listing.insufficient_storage=倉庫數量不足！需要 {0}，倉庫只有 {1}
+
+# ========== 求購按鈕 ==========
+menu.purchase_order=求購
+
+# ========== 驗證錯誤消息 ==========
+validation.listing_data_null=上架數據不能為空
+validation.item_null=物品不能為空
+validation.invalid_item_type_id=物品類型 ID 無效
+validation.item_name_empty=物品名稱不能為空
+validation.quantity_must_be_positive=數量必須大於 0
+validation.quantity_exceeds_absolute_max=數量不能超過 {0}（系統限制）
+validation.quantity_exceeds_storage=數量不能超過 {0}（倉庫數量）
+validation.quantity_out_of_range=數量必須在 1 到 {0} 之間
+validation.price_must_be_positive=價格必須大於 0
+validation.price_exceeds_max=價格不能超過 10,000,000
+validation.price_exceeds_one_million=價格不能超過 1,000,000
+validation.total_price_exceeds_max=總價不能超過 100,000,000
+validation.market_not_selected=必須選擇市場
+validation.durability_out_of_range=耐久度必須在 0 到 100 之間
+validation.invalid_condition=物品狀態無效
+
+# ========== API錯誤消息 ==========
+error.unknown=未知錯誤
+error.order_limit_exceeded=訂單數量已達上限（最多{0}個），請先取消部分訂單
+error.order_limit_exceeded_generic=訂單數量已達上限，請先取消部分訂單
+error.order_cancelled=該訂單已被取消，無法供貨
+error.order_completed=該訂單已完成，無法重複供貨
+error.order_expired=該訂單已過期，無法供貨
+error.order_invalid_state=訂單狀態異常，無法供貨（可能已取消或完成）
+error.duplicate_purchase_order=檢測到相同的求購訂單，請稍等幾秒後再試
+error.duplicate_order=檢測到重複訂單，請稍等幾秒後重試
+error.insufficient_balance_purchase_order=餘額不足，無法創建求購訂單
+error.invalid_price=價格無效，請檢查價格設定
+error.invalid_quantity=數量無效，請檢查數量設定
+error.not_authenticated=未登錄或登錄已過期，請重新登錄
+error.item_not_found=物品不存在或已被移除
+error.order_not_found=訂單不存在或已被刪除
+error.operation_failed=操作失敗，請重試
+
+# ========== 時間顯示 ==========
+time.expired=已過期
+time.seconds={0}秒
+time.minutes={0}分鐘
+time.hours={0}小時
+time.hours_minutes={0}小時{1}分

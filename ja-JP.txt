@@ -6,11 +6,15 @@ market.title=Duck Market
 DuckMarket.Title=Duck Market
 DuckMarket.Title.ja-JP=Duck Market
 market.browse=マーケットを見る
-market.my_listings=出品中の商品
+market.my_listings=マイリスト
 market.per_item=個あたり
 DuckMarket.PerItem.ja-JP=個あたり
 market.seller=出品者
 DuckMarket.Seller.ja-JP=出品者
+market.buyer=購入者
+market.demand=需要
+market.fulfilled=完了
+market.expired=期限切れ
 market.mod_item=MOD アイテム
 
 # ========== フィルターボタン ==========
@@ -24,6 +28,17 @@ search.refresh=更新
 search.placeholder=アイテムを検索...
 search.item_name_placeholder=アイテム名を検索...
 search.advanced_filter_placeholder=高度なフィルター...
+
+# ========== 供給ボタン ==========
+market.supply_button=供給
+market.no_stock_button=在庫なし
+market.cancel_order_button=キャンセル
+market.no_purchase_orders=購入注文がありません
+market.purchase_order_not_found=アイテム {0} の購入注文が市場にありません
+market.no_listings=出品がありません
+market.item_not_found=アイテム {0} の出品が市場に見つかりません
+market.no_my_purchase_orders=購入注文がありません
+market.no_my_sell_listings=出品がありません
 
 # ========== 購入ボタン ==========
 buy.button=購入
@@ -123,8 +138,8 @@ options.font.large=大
 # ========== 売却通知 ==========
 sold.base_notification=商品が売れました！{0} x{1} = {2} コイン (購入者: {3})
 sold.raid_notification=商品が売れました！{0} x{1} = {2} コイン (基地に戻ると受け取れます)
-sold.single_notification=商品が売れました：{0} x{1} = {2} ₽
-sold.multiple_notification={0} 個の商品が売れました、合計 {1} ₽
+sold.single_notification=商品が売れました：{0} x{1} = {2} 
+sold.multiple_notification={0} 個の商品が売れました、合計 {1} 
 
 # ========== WebSocket 接続 ==========
 websocket.disconnected=マーケット接続が切断されました
@@ -194,3 +209,108 @@ community.qq_text=Join QQ group
 community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
 community.discord_text=Join Discord
 community.discord_url=https://discord.gg/JyeP9f7zcR
+
+# ========== 供給関連 ==========
+supply.title=どれくらい供給しますか？
+supply.confirm=供給を確認
+supply.payment={0}を受け取ります
+supply.success_notification=供給成功！{0} x{1}、{2}を受け取りました
+supply.failed_notification=供給に失敗しました。もう一度お試しください
+supply.cannot_fulfill=この注文は現在実行できません
+supply.insufficient_balance_for_tax=残高不足！税金が必要です: {0}、現在の残高: {1}
+supply.insufficient_items=アイテム不足！{0}個の{1}しかありません
+supply.exceed_demand=供給数量が需要を超えています({0}個)
+
+# ========== 購入注文 ==========
+purchase_order.no_entry={0}の購入注文がありません
+purchase_order.cancelled_success=購入注文がキャンセルされ、{0}コインが受け取りポイントに返金されました
+purchase_order.cancelled_failed=購入注文のキャンセルに失敗しました: {0}
+purchase_order.cancelled_failed_generic=購入注文のキャンセルに失敗しました
+purchase.insufficient_balance=残高不足！必要: {0}、所持: {1}
+
+# ========== 供給インターフェースラベル ==========
+supply.no_full_durability=耐久値が最大の{0}がありません、供給できません
+supply.quantity_label=供給数量
+supply.demand_label=需要:
+supply.you_have_full_durability=最大耐久値を持っています: {0}個
+supply.demand_and_buyer=需要: {0}個 | 購入者: {1}
+supply.tax_label=(税金: {0})
+supply.insufficient_tax_label=(税金不足: {0})
+
+# ========== 購入注文作成 ==========
+purchase_order.create_button=購入注文を発行
+purchase_order.price_with_tax={0} (税金: {1})
+purchase_order.insufficient_funds=資金不足、{0}が必要です（税金込み）
+purchase_order.tax_calculation_error=税金計算エラー
+
+# ========== 共通 ==========
+common.no_data=データなし
+common.quantity_format={0}個
+
+# ========== WebSocket通知 ==========
+notification.completed=完了
+notification.remaining_quantity=あと{0}個必要
+notification.purchase_order_fulfilled={0} x{1}が{2}によって供給されました、{3}
+notification.item_expired=商品が期限切れです: {0} x{1}が受け取りロッカーに返却されました
+
+# ========== 購入注文入力 ==========
+purchase_order.quantity_input_label=購入数量
+purchase_order.price_input_label=購入単価
+purchase_order.quantity_must_be_positive=購入数量は0より大きい必要があります
+purchase_order.quantity_exceeds_max=購入数量は{0}を超えることはできません
+purchase_order.price_cannot_be_negative=購入単価は負の値にできません
+purchase_order.price_below_minimum=購入単価は推奨価格の半分を下回ることはできません ({0})
+
+# ========== 購入注文発行 ==========
+purchase_order.publish_success=購入注文が正常に発行されました: {0} x{1}、凍結資金 {2}
+purchase_order.publish_failed=購入注文の発行に失敗しました: {0}
+purchase_order.publish_failed_generic=購入注文の発行に失敗しました
+
+# ========== 出品失敗 ==========
+listing.insufficient_tax_balance=残高不足！税金の支払いに{0}コインが必要、現在の残高{1}コイン
+listing.insufficient_storage=倉庫不足！{0}が必要、倉庫には{1}しかありません
+
+# ========== 購入注文ボタン ==========
+menu.purchase_order=購入注文
+
+# ========== 検証エラーメッセージ ==========
+validation.listing_data_null=出品データは空にできません
+validation.item_null=アイテムは空にできません
+validation.invalid_item_type_id=無効なアイテムタイプID
+validation.item_name_empty=アイテム名は空にできません
+validation.quantity_must_be_positive=数量は0より大きい必要があります
+validation.quantity_exceeds_absolute_max=数量は{0}を超えることはできません（システム制限）
+validation.quantity_exceeds_storage=数量は{0}を超えることはできません（倉庫数量）
+validation.quantity_out_of_range=数量は1から{0}の間である必要があります
+validation.price_must_be_positive=価格は0より大きい必要があります
+validation.price_exceeds_max=価格は10,000,000を超えることはできません
+validation.price_exceeds_one_million=価格は1,000,000を超えることはできません
+validation.total_price_exceeds_max=総価格は100,000,000を超えることはできません
+validation.market_not_selected=市場を選択する必要があります
+validation.durability_out_of_range=耐久度は0から100の間である必要があります
+validation.invalid_condition=無効なアイテム状態
+
+# ========== APIエラーメッセージ ==========
+error.unknown=不明なエラー
+error.order_limit_exceeded=注文の上限に達しました（最大{0}件）、まず一部の注文をキャンセルしてください
+error.order_limit_exceeded_generic=注文の上限に達しました、まず一部の注文をキャンセルしてください
+error.order_cancelled=この注文はキャンセルされました、供給できません
+error.order_completed=この注文は完了しました、再度供給できません
+error.order_expired=この注文は期限切れです、供給できません
+error.order_invalid_state=注文状態が異常です、供給できません（キャンセルまたは完了の可能性）
+error.duplicate_purchase_order=同じ購入注文が検出されました、数秒待ってから再試行してください
+error.duplicate_order=重複する注文が検出されました、数秒待ってから再試行してください
+error.insufficient_balance_purchase_order=残高不足、購入注文を作成できません
+error.invalid_price=無効な価格、価格設定を確認してください
+error.invalid_quantity=無効な数量、数量設定を確認してください
+error.not_authenticated=ログインしていないかセッションが期限切れです、再ログインしてください
+error.item_not_found=アイテムが見つからないか削除されました
+error.order_not_found=注文が見つからないか削除されました
+error.operation_failed=操作が失敗しました、再試行してください
+
+# ========== 時間表示 ==========
+time.expired=期限切れ
+time.seconds={0}秒
+time.minutes={0}分
+time.hours={0}時間
+time.hours_minutes={0}時間{1}分

@@ -7,6 +7,10 @@ market.browse=Browse Market
 market.my_listings=My Listings
 market.per_item=Per Item
 market.seller=Seller
+market.buyer=Buyer
+market.demand=Demand
+market.fulfilled=Fulfilled
+market.expired=Expired
 market.mod_item=MOD Item
 
 # ========== Filter Buttons ==========
@@ -20,6 +24,20 @@ search.refresh=Refresh
 search.placeholder=Search items...
 search.item_name_placeholder=Search item name...
 search.advanced_filter_placeholder=Advanced filter...
+
+# ========== Supply Buttons ==========
+supply.button=Supply
+supply.no_stock=No Stock
+supply.cancel=Cancel
+market.supply_button=Supply
+market.no_stock_button=No Stock
+market.cancel_order_button=Cancel
+market.no_purchase_orders=No purchase orders available
+market.purchase_order_not_found=No purchase orders for item {0} on market
+market.no_listings=No listings available
+market.item_not_found=No listings found for item {0} on market
+market.no_my_purchase_orders=No purchase orders
+market.no_my_sell_listings=No sell listings
 
 # ========== Purchase Buttons ==========
 buy.button=Purchase
@@ -114,8 +132,8 @@ options.font.large=Large
 # ========== Sold Notifications ==========
 sold.base_notification=Item Sold! {0} x{1} = {2} coins (Buyer: {3})
 sold.raid_notification=Item Sold! {0} x{1} = {2} coins (You will receive it when returning to base)
-sold.single_notification=Item sold: {0} x{1} = {2} ₽
-sold.multiple_notification={0} items sold, total {1} ₽
+sold.single_notification=Item sold: {0} x{1} = {2} 
+sold.multiple_notification={0} items sold, total {1} 
 
 # ========== WebSocket Connection ==========
 websocket.disconnected=Market connection lost
@@ -187,3 +205,108 @@ community.qq_text=Join QQ group
 community.qq_url=https://docs.qq.com/aio/DU3pNVVRUa0tLbmJu?p=YcRni2jhOBEe2PFyaBNrMo
 community.discord_text=Join Discord
 community.discord_url=https://discord.gg/JyeP9f7zcR
+
+# ========== Supply related ==========
+supply.title=How much would you like to supply?
+supply.confirm=Confirm Supply
+supply.payment=You will receive {0}
+supply.success_notification=Supply successful! {0} x{1}, received {2}
+supply.failed_notification=Supply failed, please try again
+supply.cannot_fulfill=This order cannot be fulfilled at this time
+supply.insufficient_balance_for_tax=Insufficient balance! Tax required: {0}, Current balance: {1}
+supply.insufficient_items=Insufficient items! You only have {0} {1}
+supply.exceed_demand=Supply quantity cannot exceed demand ({0} units)
+
+# ========== Purchase orders ==========
+purchase_order.no_entry=No purchase orders for {0}
+purchase_order.cancelled_success=Purchase order cancelled, {0} coins refunded to pickup point
+purchase_order.cancelled_failed=Failed to cancel purchase order: {0}
+purchase_order.cancelled_failed_generic=Failed to cancel purchase order
+purchase.insufficient_balance=Insufficient balance! Required: {0}, but you only have {1}
+
+# ========== Supply interface labels ==========
+supply.no_full_durability=You don't have full durability {0}, cannot supply
+supply.quantity_label=Supply Quantity
+supply.demand_label=Demand:
+supply.you_have_full_durability=You have full durability: {0} units
+supply.demand_and_buyer=Demand: {0} units | Buyer: {1}
+supply.tax_label=(Tax: {0})
+supply.insufficient_tax_label=(Insufficient tax: {0})
+
+# ========== Purchase order creation ==========
+purchase_order.create_button=Publish Purchase Order
+purchase_order.price_with_tax={0} (Tax: {1})
+purchase_order.insufficient_funds=Insufficient funds, required {0} (including tax)
+purchase_order.tax_calculation_error=Tax calculation error
+
+# ========== Common ==========
+common.no_data=No data
+common.quantity_format={0} units
+
+# ========== WebSocket Notifications ==========
+notification.completed=Completed
+notification.remaining_quantity={0} more needed
+notification.purchase_order_fulfilled={0} x{1} supplied by {2}, {3}
+notification.item_expired=Item expired: {0} x{1} returned to pickup locker
+
+# ========== Purchase Order Input ==========
+purchase_order.quantity_input_label=Purchase Quantity
+purchase_order.price_input_label=Purchase Price
+purchase_order.quantity_must_be_positive=Purchase quantity must be greater than 0
+purchase_order.quantity_exceeds_max=Purchase quantity cannot exceed {0}
+purchase_order.price_cannot_be_negative=Purchase price cannot be negative
+purchase_order.price_below_minimum=Purchase price cannot be less than half of recommended price ({0})
+
+# ========== Purchase Order Publishing ==========
+purchase_order.publish_success=Purchase order published successfully: {0} x{1}, frozen funds {2}
+purchase_order.publish_failed=Failed to publish purchase order: {0}
+purchase_order.publish_failed_generic=Failed to publish purchase order
+
+# ========== Listing Failures ==========
+listing.insufficient_tax_balance=Insufficient balance! Need {0} coins to pay tax, current balance {1} coins
+listing.insufficient_storage=Insufficient storage! Need {0}, storage only has {1}
+
+# ========== Purchase Order Button ==========
+menu.purchase_order=Purchase Order
+
+# ========== Validation Error Messages ==========
+validation.listing_data_null=Listing data cannot be empty
+validation.item_null=Item cannot be empty
+validation.invalid_item_type_id=Invalid item type ID
+validation.item_name_empty=Item name cannot be empty
+validation.quantity_must_be_positive=Quantity must be greater than 0
+validation.quantity_exceeds_absolute_max=Quantity cannot exceed {0} (system limit)
+validation.quantity_exceeds_storage=Quantity cannot exceed {0} (storage quantity)
+validation.quantity_out_of_range=Quantity must be between 1 and {0}
+validation.price_must_be_positive=Price must be greater than 0
+validation.price_exceeds_max=Price cannot exceed 10,000,000
+validation.price_exceeds_one_million=Price cannot exceed 1,000,000
+validation.total_price_exceeds_max=Total price cannot exceed 100,000,000
+validation.market_not_selected=Must select a market
+validation.durability_out_of_range=Durability must be between 0 and 100
+validation.invalid_condition=Invalid item condition
+
+# ========== API Error Messages ==========
+error.unknown=Unknown error
+error.order_limit_exceeded=Order limit reached (max {0}), please cancel some orders first
+error.order_limit_exceeded_generic=Order limit reached, please cancel some orders first
+error.order_cancelled=This order has been cancelled, cannot supply
+error.order_completed=This order has been completed, cannot supply again
+error.order_expired=This order has expired, cannot supply
+error.order_invalid_state=Order status is abnormal, cannot supply (may be cancelled or completed)
+error.duplicate_purchase_order=Duplicate purchase order detected, please wait a few seconds and try again
+error.duplicate_order=Duplicate order detected, please wait a few seconds and try again
+error.insufficient_balance_purchase_order=Insufficient balance, cannot create purchase order
+error.invalid_price=Invalid price, please check price settings
+error.invalid_quantity=Invalid quantity, please check quantity settings
+error.not_authenticated=Not logged in or session expired, please log in again
+error.item_not_found=Item not found or has been removed
+error.order_not_found=Order not found or has been deleted
+error.operation_failed=Operation failed, please try again
+
+# ========== Time Display ==========
+time.expired=Expired
+time.seconds={0} sec
+time.minutes={0} min
+time.hours={0} hr
+time.hours_minutes={0} hr {1} min
